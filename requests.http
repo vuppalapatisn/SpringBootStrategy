@@ -1,0 +1,21 @@
+### CARD OK
+POST http://localhost:8080/payments
+Content-Type: application/json
+
+{
+  "type": "CARD",
+  "amount": 1000,
+  "currency": "INR",
+  "attributes": {"cardNumber": "4111111111111112"}
+}
+
+### UPI OK
+POST http://localhost:8080/payments
+Content-Type: application/json
+
+{
+  "type": "UPI",
+  "amount": 250,
+  "currency": "INR",
+  "attributes": {"upiId": "alice@okhdfc"}
+}
